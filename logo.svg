@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" fill="none">
+
+  <!-- m letterform: three-arch structure -->
+  <path d="
+    M 5,52
+    L 5,24
+    C 5,10 11,5 19,9
+    C 23,11 27,16 29,22
+    C 31,28 33,30 35,22
+    C 37,14 42,7 50,9
+    C 57,11 61,17 61,24
+    L 61,52
+  " stroke="#1A1A18" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- g letterform: open circle with crossbar arm -->
+  <!-- Circle arc — open at right ~4 o'clock -->
+  <path d="
+    M 82,32
+    A 16,16 0 1,1 82,31
+  " stroke="#1A1A18" stroke-width="2.8" stroke-linecap="round"/>
+
+  <!-- g crossbar arm extending right -->
+  <path d="
+    M 82,32
+    L 97,32
+    L 97,44
+    Q 97,52 88,52
+    L 82,52
+  " stroke="#1A1A18" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Vertical rule separator -->
+  <line x1="114" y1="10" x2="114" y2="54" stroke="#1A1A18" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- MISS GALIT, LLC wordmark -->
+  <text
+    x="126" y="31"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="13"
+    font-weight="400"
+    letter-spacing="3.5"
+    fill="#1A1A18"
+  >MISS GALIT,</text>
+  <text
+    x="126" y="48"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="11"
+    font-weight="400"
+    letter-spacing="5"
+    fill="#1A1A18"
+    opacity="0.75"
+  >LLC</text>
+
+</svg>
