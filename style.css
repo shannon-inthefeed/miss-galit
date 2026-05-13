@@ -186,7 +186,7 @@ nav {
   transition: background 0.3s ease;
 }
 .nav-logo img {
-  height: 44px;
+  height: 40px;
   width: auto;
 }
 .nav-logo .tagline {
@@ -509,7 +509,7 @@ footer {
   border-bottom: 1px solid rgba(244,239,232,0.1);
   margin-bottom: 32px;
 }
-.footer-logo img { height: 32px; filter: brightness(0) invert(1); opacity: 0.8; margin-bottom: 12px; }
+.footer-logo img { height: 32px; opacity: 0.9; margin-bottom: 12px; }
 .footer-tagline {
   font-size: 11px;
   letter-spacing: 0.12em;
@@ -586,4 +586,5 @@ footer {
   .footer-bottom { flex-direction: column; gap: 8px; }
   .process-step { grid-template-columns: 48px 1fr; gap: 20px; }
   .audience-card { padding: 36px 28px; }
+  section[style*="grid-template-columns: 1fr 1fr"] { grid-template-columns: 1fr !important; }
 }
