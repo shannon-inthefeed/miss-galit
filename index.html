@@ -41,17 +41,17 @@
   </div>
 
   <!-- HERO -->
-  <section style="margin-top: 70px; min-height: calc(88vh - 70px); display: grid; grid-template-columns: 1fr 1fr;">
-    <div style="background: var(--charcoal); display: flex; align-items: flex-end; padding: 80px 5vw;">
-      <div>
-        <span class="eyebrow" style="color: var(--stone);">Intimates · Activewear · Swimwear</span>
-        <h1 style="color: var(--cream);">You have<br><em>the idea.</em></h1>
-        <p style="color: rgba(244,239,232,0.8); font-size: 18px; max-width: 420px; margin: 24px 0 40px;">We know every factory, every material, and every obstacle standing between you and a product people actually want to wear.</p>
-        <a href="contact.html" class="btn btn--light">Set Up a Call</a>
-      </div>
-    </div>
-    <div style="overflow: hidden;">
-      <img src="images/portfolio-seamless-activewear.png" alt="Seamless activewear product" style="width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;" />
+  <section style="margin-top: 70px; min-height: calc(88vh - 70px); position: relative; display: flex; align-items: flex-end; overflow: hidden;">
+    <!-- Parallax background -->
+    <div style="position: absolute; inset: 0; background-image: url('images/bras-on-line.jpg'); background-size: cover; background-position: center; background-attachment: fixed;"></div>
+    <!-- Dark overlay -->
+    <div style="position: absolute; inset: 0; background: rgba(26,26,24,0.55);"></div>
+    <!-- Content -->
+    <div style="position: relative; z-index: 2; padding: 80px 5vw;">
+      <span class="eyebrow" style="color: var(--stone);">Intimates · Activewear · Swimwear</span>
+      <h1 style="color: var(--cream);">You have<br><em>the idea.</em></h1>
+      <p style="color: rgba(244,239,232,0.85); font-size: 18px; max-width: 520px; margin: 24px 0 40px;">We know every factory, every material, and every obstacle standing between you and a product people actually want to wear.</p>
+      <a href="contact.html" class="btn btn--light">Set Up a Call</a>
     </div>
   </section>
 
@@ -76,17 +76,17 @@
       <div class="grid-3 mt-md">
 
         <div>
-          <h3 style="font-style: italic;">The relationships<br>you can't buy.</h3>
+          <h3>The relationships<br>you can't buy.</h3>
           <p style="color: var(--mid); margin-top: 16px;">Twenty years of factory relationships built on trust, not contracts. When we need a factory to take a difficult order, they take it. Because we asked.</p>
         </div>
 
         <div>
-          <h3 style="font-style: italic;">We say "our"<br>not "your."</h3>
+          <h3>We say "our"<br>not "your."</h3>
           <p style="color: var(--mid); margin-top: 16px;">When we work on your legging, it becomes our legging. Your win is our win. That's not a tagline. It's how we operate every single day.</p>
         </div>
 
         <div>
-          <h3 style="font-style: italic;">Small enough<br>to move fast.</h3>
+          <h3>Small enough<br>to move fast.</h3>
           <p style="color: var(--mid); margin-top: 16px;">We're a hand-picked team, not a big agency. We don't get stuck in layers. When the industry shifts, we shift with it. We always have a Plan B ready.</p>
         </div>
 
@@ -116,7 +116,7 @@
         <a href="who-we-serve.html" class="btn mt-md" style="display: inline-block;">See Who We Work With</a>
       </div>
       <div>
-        <img src="images/galit-bra-sample-bw.jpeg" alt="Product development and sampling" style="width: 100%; height: 500px; object-fit: cover; object-position: center 30%;" />
+        <img src="images/portfolio-dkny-bra.png" alt="DKNY bralette product development" style="width: 100%; height: 500px; object-fit: cover; object-position: center 65%; border-radius: 10px;" />
       </div>
     </div>
   </section>
@@ -152,7 +152,7 @@
   <section class="section" style="padding: var(--section-pad) var(--gutter);">
     <div class="grid-2 container" style="gap: 80px;">
       <div>
-        <img src="images/galit-desk-wide.jpeg" alt="Galit Wexler" style="width: 100%; max-height: 600px; object-fit: cover; object-position: center top;" />
+        <img src="images/galit-laptop.jpeg" alt="Galit Wexler" style="width: 100%; max-height: 600px; object-fit: cover; object-position: center top; border-radius: 10px;" />
       </div>
       <div>
         <span class="eyebrow">About Galit</span>
@@ -173,11 +173,18 @@
     <div class="container">
       <span class="eyebrow">Selected Work</span>
       <h2 class="mb-md">Brands we've built.<br><em>Products we're proud of.</em></h2>
+      <!-- Collage: row 1 — 3 columns, varied heights -->
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+        <img src="images/portfolio-seamless-activewear.png" alt="Seamless activewear" style="width: 100%; height: 320px; object-fit: cover; object-position: center top; border-radius: 10px;" />
+        <img src="images/pretty-bras.jpg" alt="Intimates lingerie" style="width: 100%; height: 320px; object-fit: cover; object-position: center; border-radius: 10px;" />
+        <img src="images/active-wear.jpg" alt="Activewear" style="width: 100%; height: 320px; object-fit: cover; object-position: center top; border-radius: 10px;" />
+      </div>
+      <!-- Collage: row 2 — 4 columns, shorter -->
       <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
-        <img src="images/portfolio-navy-set.png" alt="Intimates set" style="width: 100%; height: 220px; object-fit: cover; object-position: center 20%;" />
-        <img src="images/portfolio-dkny-bra.png" alt="DKNY bralette" style="width: 100%; height: 220px; object-fit: cover; object-position: center 65%;" />
-        <img src="images/portfolio-sports-bra.png" alt="Sports bra" style="width: 100%; height: 220px; object-fit: cover; object-position: center 15%;" />
-        <img src="images/portfolio-seamless-crop.png" alt="Seamless activewear" style="width: 100%; height: 220px; object-fit: cover; object-position: center 30%;" />
+        <img src="images/portfolio-navy-set.png" alt="Intimates set" style="width: 100%; height: 200px; object-fit: cover; object-position: center 20%; border-radius: 10px;" />
+        <img src="images/portfolio-dkny-bra.png" alt="DKNY bralette" style="width: 100%; height: 200px; object-fit: cover; object-position: center 65%; border-radius: 10px;" />
+        <img src="images/portfolio-sports-bra.png" alt="Sports bra" style="width: 100%; height: 200px; object-fit: cover; object-position: center 15%; border-radius: 10px;" />
+        <img src="images/portfolio-seamless-crop.png" alt="Seamless crop" style="width: 100%; height: 200px; object-fit: cover; object-position: center 30%; border-radius: 10px;" />
       </div>
       <p style="color: var(--muted); font-size: 13px; text-align: center; margin-top: 14px; letter-spacing: 0.05em;">A selection of brands and products developed through Miss Galit LLC</p>
     </div>
